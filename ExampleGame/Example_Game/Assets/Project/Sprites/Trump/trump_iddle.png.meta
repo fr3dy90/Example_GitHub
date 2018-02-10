@@ -1,0 +1,707 @@
+fileFormatVersion: 2
+guid: ee68a3534f4dc464c990da902d527e47
+timeCreated: 1518218479
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: trump_iddle_0
+    21300002: trump_iddle_1
+    21300004: trump_iddle_2
+    21300006: trump_iddle_3
+    21300008: trump_iddle_4
+    21300010: trump_iddle_5
+    21300012: trump_iddle_6
+    21300014: trump_iddle_7
+    21300016: trump_iddle_8
+    21300018: trump_iddle_9
+    21300020: trump_iddle_10
+    21300022: trump_iddle_11
+    21300024: trump_iddle_12
+    21300026: trump_iddle_13
+    21300028: trump_iddle_14
+    21300030: trump_iddle_15
+    21300032: trump_iddle_16
+    21300034: trump_iddle_17
+    21300036: trump_iddle_18
+    21300038: trump_iddle_19
+    21300040: trump_iddle_20
+    21300042: trump_iddle_21
+    21300044: trump_iddle_22
+    21300046: trump_iddle_23
+    21300048: trump_iddle_24
+    21300050: trump_iddle_25
+    21300052: trump_iddle_26
+    21300054: trump_iddle_27
+    21300056: trump_iddle_28
+    21300058: trump_iddle_29
+    21300060: trump_iddle_30
+    21300062: trump_iddle_31
+    21300064: trump_iddle_32
+    21300066: trump_iddle_33
+    21300068: trump_iddle_34
+    21300070: trump_iddle_35
+    21300072: trump_iddle_36
+    21300074: trump_iddle_37
+    21300076: trump_iddle_38
+    21300078: trump_iddle_39
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: trump_iddle_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 798
+        width: 113
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_1
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 798
+        width: 114
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_2
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 798
+        width: 114
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_3
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 798
+        width: 114
+        height: 193
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_4
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 798
+        width: 115
+        height: 193
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_5
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 798
+        width: 113
+        height: 193
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_6
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 798
+        width: 114
+        height: 193
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_7
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 798
+        width: 114
+        height: 193
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_8
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 798
+        width: 114
+        height: 193
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_9
+      rect:
+        serializedVersion: 2
+        x: 2377
+        y: 798
+        width: 115
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_10
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 536
+        width: 126
+        height: 203
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_11
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 536
+        width: 125
+        height: 203
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_12
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 536
+        width: 125
+        height: 202
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_13
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 536
+        width: 126
+        height: 202
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_14
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 536
+        width: 127
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_15
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 536
+        width: 127
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_16
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 536
+        width: 127
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_17
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 536
+        width: 127
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_18
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 536
+        width: 127
+        height: 202
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_19
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 536
+        width: 126
+        height: 202
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_20
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 286
+        width: 115
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_21
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 286
+        width: 115
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_22
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 286
+        width: 115
+        height: 198
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_23
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 286
+        width: 115
+        height: 198
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_24
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 286
+        width: 115
+        height: 198
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_25
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 286
+        width: 115
+        height: 197
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_26
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 286
+        width: 115
+        height: 197
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_27
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 286
+        width: 115
+        height: 197
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_28
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 286
+        width: 115
+        height: 197
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_29
+      rect:
+        serializedVersion: 2
+        x: 2374
+        y: 286
+        width: 115
+        height: 198
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_30
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 24
+        width: 132
+        height: 202
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_31
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 24
+        width: 131
+        height: 202
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_32
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 24
+        width: 131
+        height: 202
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_33
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 24
+        width: 131
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_34
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 24
+        width: 133
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_35
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 24
+        width: 134
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_36
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 24
+        width: 134
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_37
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 24
+        width: 133
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_38
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 24
+        width: 134
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_iddle_39
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 24
+        width: 133
+        height: 202
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

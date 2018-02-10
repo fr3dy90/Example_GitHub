@@ -1,0 +1,707 @@
+fileFormatVersion: 2
+guid: 9fa066e913a79b2439f5ffcf39a1413d
+timeCreated: 1518218518
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: trump_walk_0
+    21300002: trump_walk_1
+    21300004: trump_walk_2
+    21300006: trump_walk_3
+    21300008: trump_walk_4
+    21300010: trump_walk_5
+    21300012: trump_walk_6
+    21300014: trump_walk_7
+    21300016: trump_walk_8
+    21300018: trump_walk_9
+    21300020: trump_walk_10
+    21300022: trump_walk_11
+    21300024: trump_walk_12
+    21300026: trump_walk_13
+    21300028: trump_walk_14
+    21300030: trump_walk_15
+    21300032: trump_walk_16
+    21300034: trump_walk_17
+    21300036: trump_walk_18
+    21300038: trump_walk_19
+    21300040: trump_walk_20
+    21300042: trump_walk_21
+    21300044: trump_walk_22
+    21300046: trump_walk_23
+    21300048: trump_walk_24
+    21300050: trump_walk_25
+    21300052: trump_walk_26
+    21300054: trump_walk_27
+    21300056: trump_walk_28
+    21300058: trump_walk_29
+    21300060: trump_walk_30
+    21300062: trump_walk_31
+    21300064: trump_walk_32
+    21300066: trump_walk_33
+    21300068: trump_walk_34
+    21300070: trump_walk_35
+    21300072: trump_walk_36
+    21300074: trump_walk_37
+    21300076: trump_walk_38
+    21300078: trump_walk_39
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: trump_walk_0
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 796
+        width: 124
+        height: 194
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_1
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 795
+        width: 123
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_2
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 798
+        width: 125
+        height: 193
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_3
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 798
+        width: 126
+        height: 192
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_4
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 798
+        width: 125
+        height: 192
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_5
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 795
+        width: 124
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_6
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 795
+        width: 124
+        height: 196
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_7
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 795
+        width: 127
+        height: 196
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_8
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 798
+        width: 127
+        height: 193
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_9
+      rect:
+        serializedVersion: 2
+        x: 2371
+        y: 796
+        width: 125
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_10
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 538
+        width: 121
+        height: 198
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_11
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 535
+        width: 120
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_12
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 535
+        width: 117
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_13
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 536
+        width: 119
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_14
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 536
+        width: 121
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_15
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 536
+        width: 124
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_16
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 536
+        width: 120
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_17
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 538
+        width: 117
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_18
+      rect:
+        serializedVersion: 2
+        x: 2134
+        y: 538
+        width: 117
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_19
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 538
+        width: 120
+        height: 198
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_20
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 283
+        width: 122
+        height: 198
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_21
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 286
+        width: 123
+        height: 197
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_22
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 285
+        width: 123
+        height: 198
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_23
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 283
+        width: 124
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_24
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 283
+        width: 125
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_25
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 283
+        width: 123
+        height: 198
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_26
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 285
+        width: 124
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_27
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 288
+        width: 123
+        height: 197
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_28
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 285
+        width: 125
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_29
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 285
+        width: 124
+        height: 198
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_30
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 24
+        width: 129
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_31
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 23
+        width: 126
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_32
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 24
+        width: 124
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_33
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 29
+        width: 124
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_34
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 30
+        width: 125
+        height: 194
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_35
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 25
+        width: 126
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_36
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 24
+        width: 125
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_37
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 24
+        width: 121
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_38
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 24
+        width: 124
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trump_walk_39
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 24
+        width: 125
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
