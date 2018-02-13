@@ -6,11 +6,8 @@ public class TrumpController : MonoBehaviour {
 
     public enum SetAnimation
     {
-        idleFront,
-        idleBack,
-        idleRight,
-        idleLeft,
-
+        idle,
+        
         walkFront,
         walkBack,
         walkRight,
@@ -28,7 +25,8 @@ public class TrumpController : MonoBehaviour {
         up,
         down,
         left,
-        right
+        right,
+        none
     }
     public setMovement actualMovement;
 
@@ -68,15 +66,39 @@ public class TrumpController : MonoBehaviour {
             }
         }
 
+        if(Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
+        {
+            actualMovement = setMovement.none;
+        }
 
-        
+        switch (actualMovement)
+        {
+            case setMovement.none:
+                actualAnimation = SetAnimation.idle;
+                break;
+            case setMovement.up:
+                actualAnimation = SetAnimation.walkBack;
+                break;
+            case setMovement.down:
+                actualAnimation = SetAnimation.walkFront;
+                break;
+            case setMovement.left:
+                actualAnimation = SetAnimation.walkLeft;
+                break;
+            case setMovement.right:
+                actualAnimation = SetAnimation.walkRight;
+                break;
+        }
         
         switch (actualAnimation)
         {
-            case SetAnimation.idleFront:
-                if (!anim.GetCurrentAnimatorStateInfo(0).IsName("IdleFront"))
+            case SetAnimation.idle:
+                if (!anim.GetCurrentAnimatorStateInfo(0).IsName("IdleFront")    || 
+                    !anim.GetCurrentAnimatorStateInfo(0).IsName("IdleBack")     || 
+                    !anim.GetCurrentAnimatorStateInfo(0).IsName("IdleLeft")     || 
+                    !anim.GetCurrentAnimatorStateInfo(0).IsName("IdleRight"))
                 {
-                    anim.SetTrigger("WalkFront");
+                    anim.SetTrigger("Idle");
                 }
                 break;
             case SetAnimation.walkFront:
@@ -89,6 +111,18 @@ public class TrumpController : MonoBehaviour {
                 if (!anim.GetCurrentAnimatorStateInfo(0).IsName("WalkBack"))
                 {
                     anim.SetTrigger("WalkBack");
+                }
+                break;
+            case SetAnimation.walkLeft:
+                if (!anim.GetCurrentAnimatorStateInfo(0).IsName("WalkLeft"))
+                {
+                    anim.SetTrigger("WalkLeft");
+                }
+                break;
+            case SetAnimation.walkRight:
+                if (!anim.GetCurrentAnimatorStateInfo(0).IsName("WalkRight"))
+                {
+                    anim.SetTrigger("WalkRight");
                 }
                 break;
         }
