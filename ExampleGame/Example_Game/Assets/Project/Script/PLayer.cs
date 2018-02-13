@@ -17,6 +17,7 @@ public class PLayer : MonoBehaviour {
     Vector2 axesDir;
     public Vector2 right;
     public Vector2 left;
+    public bool canMoveLeft;
 
     public enum SetAnimation
     {
@@ -209,6 +210,10 @@ public class PLayer : MonoBehaviour {
 
     void MovePlayer(int dir)
     {
+        if(dir < 0 && !canMoveLeft)
+        {
+            return;
+        }
         transform.Translate((Vector3.right * (Time.deltaTime * movementSpeed)) * dir);
     }
 }
