@@ -71,6 +71,8 @@ public class TrumpController : MonoBehaviour {
             actualMovement = setMovement.none;
         }
 
+        print("Horizontal" + Input.GetAxis("Horizontal") + "  "+ "Vertical" + Input.GetAxis("Vertical"));
+
         switch (actualMovement)
         {
             case setMovement.none:

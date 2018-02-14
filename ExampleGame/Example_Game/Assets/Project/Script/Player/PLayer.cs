@@ -18,6 +18,11 @@ public class PLayer : MonoBehaviour {
     public Vector2 right;
     public Vector2 left;
     public bool canMoveLeft;
+    public bool isShoot;
+    public float timeShoot;
+    float wait;
+    public Transform spawnBullet;
+    public GameObject bulletPref;
 
     public enum SetAnimation
     {
@@ -30,7 +35,10 @@ public class PLayer : MonoBehaviour {
         stayDown,
         runLeftDown,
         runRightDown,
-        jump
+        jump,
+
+        idleShoot,
+        runShoot
     }
     public SetAnimation actualAnimation;
 
@@ -72,6 +80,25 @@ public class PLayer : MonoBehaviour {
             rb.AddForce(Vector2.down * jump_force/3, ForceMode2D.Impulse);
             canTrigger = true;
         }
+        if(Input.GetButtonDown("Fire1") && !isShoot)
+        {
+            Fire();
+            isShoot = true;
+            wait = timeShoot;
+        }
+        if(wait > 0)
+        {
+            wait -= Time.deltaTime;
+        }
+        else if(wait < 0 && isShoot)
+        {
+            isShoot = false;
+        }
+        if (Input.GetButton("Fire1"))
+        {
+            isShoot = true;
+        }
+
         if (isGrounded && jumpTime <= 0)
         {
             switch ((int)axesDir.x)
@@ -148,17 +175,37 @@ public class PLayer : MonoBehaviour {
                 break;
 
             case SetAnimation.right:
-                if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Run"))
+                if (!isShoot)
                 {
-                    anim.SetTrigger("Run");
+                    if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Run"))
+                    {
+                        anim.SetTrigger("Run");
+                    }
+                }
+                else
+                {
+                    if (!anim.GetCurrentAnimatorStateInfo(0).IsName("RunShoot"))
+                    {
+                        anim.SetTrigger("RunShoot");
+                    }
                 }
                 transform.localScale = right;
                 break;
 
             case SetAnimation.left:
-                if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Run"))
+                if (!isShoot)
                 {
-                    anim.SetTrigger("Run");
+                    if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Run"))
+                    {
+                        anim.SetTrigger("Run");
+                    }
+                }
+                else
+                {
+                    if (!anim.GetCurrentAnimatorStateInfo(0).IsName("RunShoot"))
+                    {
+                        anim.SetTrigger("RunShoot");
+                    }
                 }
                 transform.localScale = left;
                 break;
@@ -215,5 +262,11 @@ public class PLayer : MonoBehaviour {
             return;
         }
         transform.Translate((Vector3.right * (Time.deltaTime * movementSpeed)) * dir);
+    }
+
+    public void Fire()
+    {
+        GameObject bullet = Instantiate(bulletPref, spawnBullet.position, Quaternion.identity);
+        bullet.GetComponent<PlayerBullet>().dir = new Vector2(transform.localScale.x, (int)Input.GetAxis("Vertical"));
     }
 }
