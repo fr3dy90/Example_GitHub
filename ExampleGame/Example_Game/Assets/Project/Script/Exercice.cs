@@ -7,11 +7,12 @@ public class Exercice : MonoBehaviour {
     public int x;
     public int y;
     int controlCiclo;
+    public Material material;
 
     [System.Serializable]
     public class CLass_a
     {
-        public Material[] m_material;
+        public GameObject[] m_material;
     }
     public CLass_a[] class_a;
 
@@ -25,7 +26,8 @@ public class Exercice : MonoBehaviour {
     {
         if(Input.GetButtonDown("Fire1"))
         {
-            ChangeColor();
+            //ChangeColor();
+            ChangeColor_V2();
         }
     }
 
@@ -35,11 +37,11 @@ public class Exercice : MonoBehaviour {
         for (int i=0; i<y; i++)
         {
             class_a[i] = new CLass_a();
-            class_a[i].m_material = new Material[x];
+            class_a[i].m_material = new GameObject[x];
             for (int j = 0; j < x; j++)
             {
                 int color = Random.Range(0, 4);
-                GameObject obj = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                GameObject obj = GameObject.CreatePrimitive(PrimitiveType.Sphere) as GameObject;
                 obj.transform.position = new Vector3(j, i, 0);
                 switch (color)
                 {
@@ -56,24 +58,49 @@ public class Exercice : MonoBehaviour {
                         obj.GetComponent<Renderer>().material.color = Color.green;
                         break;
                 }
-                class_a[i].m_material[j] = obj.GetComponent<Renderer>().material;
+                class_a[i].m_material[j] = obj;
             }
             controlCiclo++;
         }
     }
 
-    void ChangeColor()
+    //void ChangeColor()
+    //{
+    //    for (int i = 0; i < y; i++)
+    //    {
+    //        for (int j = 0; j < x; j++)
+    //        {
+    //           if(j > 0)
+    //            {
+    //                if(class_a[i].m_material[j-1].color == class_a[i].m_material[j].color)
+    //                {
+    //                    class_a[i].m_material[j - 1] = material;
+    //                    class_a[i].m_material[j] = material;
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
+
+    void ChangeColor_V2()
     {
+        Color oldColor;
         for (int i = 0; i < y; i++)
         {
+            oldColor = class_a[i].m_material[0].GetComponent<Renderer>().material.color;
             for (int j = 0; j < x; j++)
             {
-               if(j > 0)
+                if (j > 0)
                 {
-                    if(class_a[i].m_material[j-1].color == class_a[i].m_material[j].color)
+                    if(class_a[i].m_material[j].GetComponent<Renderer>().material.color == oldColor)
                     {
-                        class_a[i].m_material[j - 1].color = Color.black;
-                        class_a[i].m_material[j].color = Color.black;
+                        oldColor = class_a[i].m_material[j].GetComponent<Renderer>().material.color;
+                        class_a[i].m_material[j - 1].GetComponent<Renderer>().material = material;
+                        class_a[i].m_material[j].GetComponent<Renderer>().material =  material; 
+                    }
+                    else
+                    {
+                        oldColor = class_a[i].m_material[j].GetComponent<Renderer>().material.color;
                     }
                 }
             }
