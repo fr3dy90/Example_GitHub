@@ -6,7 +6,6 @@ public class Exercice : MonoBehaviour {
 
     public int x;
     public int y;
-    int controlCiclo;
 
     [System.Serializable]
     public class CLass_a
@@ -17,7 +16,6 @@ public class Exercice : MonoBehaviour {
 
     private void Start()
     {
-        controlCiclo = 0;
         CrearArray();
     }
 
@@ -25,7 +23,8 @@ public class Exercice : MonoBehaviour {
     {
         if(Input.GetButtonDown("Fire1"))
         {
-            ChangeColor();
+            //ChangeColor();
+            ChangeColor_V2();
         }
     }
 
@@ -47,7 +46,7 @@ public class Exercice : MonoBehaviour {
                         obj.GetComponent<Renderer>().material.color = Color.red;
                         break;
                     case 1:
-                        obj.GetComponent<Renderer>().material.color = Color.blue;
+                        obj.GetComponent<Renderer>().material.color = Color.magenta;
                         break;
                     case 2:
                         obj.GetComponent<Renderer>().material.color = Color.yellow;
@@ -58,7 +57,6 @@ public class Exercice : MonoBehaviour {
                 }
                 class_a[i].m_material[j] = obj.GetComponent<Renderer>().material;
             }
-            controlCiclo++;
         }
     }
 
@@ -74,6 +72,31 @@ public class Exercice : MonoBehaviour {
                     {
                         class_a[i].m_material[j - 1].color = Color.black;
                         class_a[i].m_material[j].color = Color.black;
+                    }
+                }
+            }
+        }
+    }
+
+    void ChangeColor_V2()
+    {
+        Color lastColor = Color.white;
+        for (int i = 0; i < y; i++)
+        {
+            lastColor = class_a[i].m_material[0].color;
+            for (int j = 0; j < x; j++)
+            {
+                if (j > 0)
+                {
+                    if(class_a[i].m_material[j].color == lastColor)
+                    {
+                        lastColor = class_a[i].m_material[j].color;
+                        class_a[i].m_material[j-1].color = Color.black;
+                        class_a[i].m_material[j].color = Color.black;
+                    }
+                    else
+                    {
+                        lastColor = class_a[i].m_material[j].color;
                     }
                 }
             }
