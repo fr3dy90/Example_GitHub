@@ -6,11 +6,10 @@ public class Exercice : MonoBehaviour {
 
     public int x;
     public int y;
-<<<<<<< HEAD
-=======
+
     int controlCiclo;
     public Material material;
->>>>>>> e7a2ad622d2a67cb2cc755964a2da7ecf24b06d1
+
 
     [System.Serializable]
     public class CLass_a
@@ -93,11 +92,11 @@ public class Exercice : MonoBehaviour {
             {
                 if (j > 0)
                 {
-                    if(class_a[i].m_material[j].GetComponent<Renderer>().material.color == oldColor)
+                    if (class_a[i].m_material[j].GetComponent<Renderer>().material.color == oldColor)
                     {
                         oldColor = class_a[i].m_material[j].GetComponent<Renderer>().material.color;
                         class_a[i].m_material[j - 1].GetComponent<Renderer>().material = material;
-                        class_a[i].m_material[j].GetComponent<Renderer>().material =  material; 
+                        class_a[i].m_material[j].GetComponent<Renderer>().material = material;
                     }
                     else
                     {
@@ -108,28 +107,28 @@ public class Exercice : MonoBehaviour {
         }
     }
 
-    void ChangeColor_V2()
-    {
-        Color lastColor = Color.white;
-        for (int i = 0; i < y; i++)
-        {
-            lastColor = class_a[i].m_material[0].color;
-            for (int j = 0; j < x; j++)
-            {
-                if (j > 0)
-                {
-                    if(class_a[i].m_material[j].color == lastColor)
-                    {
-                        lastColor = class_a[i].m_material[j].color;
-                        class_a[i].m_material[j-1].color = Color.black;
-                        class_a[i].m_material[j].color = Color.black;
-                    }
-                    else
-                    {
-                        lastColor = class_a[i].m_material[j].color;
-                    }
-                }
-            }
-        }
-    }
+    //void ChangeColor_V2()
+    //{
+    //    Color lastColor = Color.white;
+    //    for (int i = 0; i < y; i++)
+    //    {
+    //        lastColor = class_a[i].m_material[0].color;
+    //        for (int j = 0; j < x; j++)
+    //        {
+    //            if (j > 0)
+    //            {
+    //                if(class_a[i].m_material[j].color == lastColor)
+    //                {
+    //                    lastColor = class_a[i].m_material[j].color;
+    //                    class_a[i].m_material[j-1].color = Color.black;
+    //                    class_a[i].m_material[j].color = Color.black;
+    //                }
+    //                else
+    //                {
+    //                    lastColor = class_a[i].m_material[j].color;
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
 }
