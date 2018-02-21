@@ -20,4 +20,13 @@ public class PlayerBullet : MonoBehaviour {
     {
         transform.Translate(bulletDir * (speed * Time.deltaTime));
     }
+
+    private void OnTriggerEnter2D(Collider2D target)
+    {
+        if(target.tag == "Enemy")
+        {
+            target.GetComponentInParent<BasicEnemy>().Die();
+            gameObject.SetActive(false);
+        }   
+    }
 }

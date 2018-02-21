@@ -754,6 +754,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4837419713255668, guid: 583dedbde1202a241b7235af2edb2114, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.1608
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837419713255668, guid: 583dedbde1202a241b7235af2edb2114, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.2208
+      objectReference: {fileID: 0}
+    - target: {fileID: 1304971469975418, guid: 583dedbde1202a241b7235af2edb2114, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 583dedbde1202a241b7235af2edb2114, type: 2}
   m_IsPrefabParent: 0
@@ -861,10 +873,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 1481753034965710, guid: fc356bba8cd897c4bab4e51e8612051e, type: 2}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc356bba8cd897c4bab4e51e8612051e, type: 2}
   m_IsPrefabParent: 0
@@ -933,64 +941,6 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.18202877, y: -0.01955691}
   - {x: 0.14478207, y: -0.018489629}
---- !u!1 &1584795515 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1481753034965710, guid: fc356bba8cd897c4bab4e51e8612051e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1398447276}
---- !u!58 &1584795516
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1584795515}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.05}
-  serializedVersion: 2
-  m_Radius: 0.05
---- !u!114 &1584795520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1584795515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 925d064a81d9cfd448599ca6cc5028be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.5
-  isRight: 0
-  soldierSensor:
-    serializedVersion: 2
-    m_Bits: 1024
-  right: {x: 1, y: 1, z: 1}
-  left: {x: -1, y: 1, z: 1}
---- !u!50 &1584795521
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1584795515}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!4 &1594928972 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4926977311364194, guid: 583dedbde1202a241b7235af2edb2114,

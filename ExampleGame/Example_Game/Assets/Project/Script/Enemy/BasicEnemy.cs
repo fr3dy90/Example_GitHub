@@ -10,10 +10,27 @@ public class BasicEnemy : MonoBehaviour {
     PLayer m_player;
     public Vector3 right;
     public Vector3 left;
+    public bool isDie;
+    public Rigidbody2D rb;
+    public float forceToDie;
+    public Animator anim;
+    public GameObject explosionPref;
+
+    private void Awake()
+    {
+        if(anim == null)
+        {
+            anim = GetComponent<Animator>();
+        }
+        if(rb == null)
+        {
+            rb = GetComponent<Rigidbody2D>();
+        }
+    }
 
     private void Start()
     {
-
+        isDie = false;
     }
 
     void PalyerDir()
@@ -31,6 +48,10 @@ public class BasicEnemy : MonoBehaviour {
 
     private void Update()
     {
+        if (isDie)
+        {
+            return;
+        }
         if (isRight)
         {
             transform.localScale = left;
@@ -54,6 +75,22 @@ public class BasicEnemy : MonoBehaviour {
                 isRight = !isRight;
             }
         }
+    }
+
+    public void Die()
+    {
+        isDie = true;
+        anim.SetTrigger("Die");
+        rb.AddForce(Vector3.up * forceToDie, ForceMode2D.Impulse);
+        StartCoroutine(Explosion());
+    }
+
+    IEnumerator Explosion()
+    {
+        yield return new WaitForSeconds(0.25f);
+        GameObject effect = Instantiate(explosionPref, transform.position + new Vector3(0,0.15f,0), Quaternion.identity);
+        effect.GetComponent<EliminateExplosion>().Call();
+        gameObject.SetActive(false);
     }
 
     private void OnDrawGizmos()

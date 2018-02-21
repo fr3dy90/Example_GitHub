@@ -22,6 +22,7 @@ public class PLayer : MonoBehaviour {
     public float timeShoot;
     float wait;
     public Transform spawnBullet;
+    public Vector3 spawnPosition;
     public GameObject bulletPref;
 
     public enum SetAnimation
@@ -108,6 +109,7 @@ public class PLayer : MonoBehaviour {
                     {
                         case 0:
                             actualAnimation = SetAnimation.idle;
+                            spawnBullet.position = 
                             break;
                         case 1:
                             actualAnimation = SetAnimation.lookUp;
