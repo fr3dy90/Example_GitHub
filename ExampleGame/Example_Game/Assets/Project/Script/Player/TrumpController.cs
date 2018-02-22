@@ -31,7 +31,7 @@ public class TrumpController : MonoBehaviour {
     public setMovement actualMovement;
 
     Animator anim;
-    string last;
+    public float movementSpeed;
 
     private void Awake()
     {
@@ -45,11 +45,9 @@ public class TrumpController : MonoBehaviour {
             if (Input.GetAxis("Horizontal") > 0)
             {
                 actualMovement = setMovement.right;
-                last = "right";
             }else if(Input.GetAxis ("Horizontal") < 0)
             {
                 actualMovement = setMovement.left;
-                last = "left";
             }
         }
 
@@ -58,11 +56,9 @@ public class TrumpController : MonoBehaviour {
             if(Input.GetAxis("Vertical") > 0)
             {
                 actualMovement = setMovement.up;
-                last = "up";
             }else if(Input.GetAxis("Vertical") < 0)
             {
                 actualMovement = setMovement.down;
-                last = "down";
             }
         }
 
@@ -80,15 +76,19 @@ public class TrumpController : MonoBehaviour {
                 break;
             case setMovement.up:
                 actualAnimation = SetAnimation.walkBack;
+                transform.Translate((Vector3.up * movementSpeed) * Time.deltaTime);
                 break;
             case setMovement.down:
                 actualAnimation = SetAnimation.walkFront;
+                transform.Translate((Vector3.down * movementSpeed) * Time.deltaTime);
                 break;
             case setMovement.left:
                 actualAnimation = SetAnimation.walkLeft;
+                transform.Translate((Vector3.left * movementSpeed) * Time.deltaTime);
                 break;
             case setMovement.right:
                 actualAnimation = SetAnimation.walkRight;
+                transform.Translate((Vector3.right * movementSpeed) * Time.deltaTime);
                 break;
         }
         
