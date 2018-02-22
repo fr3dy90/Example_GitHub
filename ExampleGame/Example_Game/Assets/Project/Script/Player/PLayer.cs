@@ -22,8 +22,9 @@ public class PLayer : MonoBehaviour {
     public float timeShoot;
     float wait;
     public Transform spawnBullet;
-    public Vector3 spawnPosition;
+    public Vector3[] spawnPositions;
     public GameObject bulletPref;
+    public Vector2 bulletDir;
 
     public enum SetAnimation
     {
@@ -81,25 +82,6 @@ public class PLayer : MonoBehaviour {
             rb.AddForce(Vector2.down * jump_force/3, ForceMode2D.Impulse);
             canTrigger = true;
         }
-        if(Input.GetButtonDown("Fire1") && !isShoot)
-        {
-            Fire();
-            isShoot = true;
-            wait = timeShoot;
-        }
-        if(wait > 0)
-        {
-            wait -= Time.deltaTime;
-        }
-        else if(wait < 0 && isShoot)
-        {
-            isShoot = false;
-        }
-        if (Input.GetButton("Fire1"))
-        {
-            isShoot = true;
-        }
-
         if (isGrounded && jumpTime <= 0)
         {
             switch ((int)axesDir.x)
@@ -109,13 +91,15 @@ public class PLayer : MonoBehaviour {
                     {
                         case 0:
                             actualAnimation = SetAnimation.idle;
-                            spawnBullet.position = 
+                            SetBulletDir((int)transform.localScale.x, 0, 0);
                             break;
                         case 1:
                             actualAnimation = SetAnimation.lookUp;
+                            SetBulletDir(0, 1, 1);
                             break;
                         case -1:
                             actualAnimation = SetAnimation.stayDown;
+                            SetBulletDir((int)transform.localScale.x, 0, 2);
                             break;
                     }
                     break;
@@ -124,12 +108,15 @@ public class PLayer : MonoBehaviour {
                     {
                         case 0:
                             actualAnimation = SetAnimation.right;
+                            SetBulletDir(1, 0, 0);
                             break;
                         case 1:
                             actualAnimation = SetAnimation.runRightUp;
+                            SetBulletDir(1, 1, 3);
                             break;
                         case -1:
                             actualAnimation = SetAnimation.runRightDown;
+                            SetBulletDir(1, -1, 4);
                             break;
                     }
                     break;
@@ -138,19 +125,42 @@ public class PLayer : MonoBehaviour {
                     {
                         case 0:
                             actualAnimation = SetAnimation.left;
+                            SetBulletDir(-1, 0, 0);
                             break;
                         case 1:
                             actualAnimation = SetAnimation.runLeftUp;
+                            SetBulletDir(-1, 1, 3);
                             break;
                         case -1:
                             actualAnimation = SetAnimation.runLeftDown;
+                            SetBulletDir(-1, -1, 4);
                             break;
                     }
                     break;
             }
         }
         MovePlayer((int)axesDir.x);
-        
+
+        if (Input.GetButtonDown("Fire1") && !isShoot)
+        {
+            Fire((int)bulletDir.x, (int)bulletDir.y);
+            isShoot = true;
+            wait = timeShoot;
+        }
+        if (wait > 0)
+        {
+            wait -= Time.deltaTime;
+        }
+        else if (wait < 0 && isShoot)
+        {
+            isShoot = false;
+        }
+        if (Input.GetButton("Fire1"))
+        {
+            isShoot = true;
+        }
+
+
         switch (actualAnimation)
         {
             case SetAnimation.idle:
@@ -251,6 +261,13 @@ public class PLayer : MonoBehaviour {
         isGrounded = (Physics2D.OverlapCircle(transform.position, radius, collsionLayer)&&rb.velocity.y <= 0);
     }
 
+    void SetBulletDir(int x, int y, int pos)
+    {
+        bulletDir.x = x;
+        bulletDir.y = y;
+        spawnBullet.localPosition = spawnPositions[pos];
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
@@ -266,9 +283,9 @@ public class PLayer : MonoBehaviour {
         transform.Translate((Vector3.right * (Time.deltaTime * movementSpeed)) * dir);
     }
 
-    public void Fire()
+    public void Fire(int x, int y)
     {
         GameObject bullet = Instantiate(bulletPref, spawnBullet.position, Quaternion.identity);
-        bullet.GetComponent<PlayerBullet>().dir = new Vector2(transform.localScale.x, (int)Input.GetAxis("Vertical"));
+        bullet.GetComponent<PlayerBullet>().dir = new Vector2(x,y);
     }
 }
