@@ -836,6 +836,11 @@ Prefab:
       propertyPath: m_UseFullKinematicContacts
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114153161010891342, guid: 583dedbde1202a241b7235af2edb2114,
+        type: 2}
+      propertyPath: collsionLayer.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 583dedbde1202a241b7235af2edb2114, type: 2}
   m_IsPrefabParent: 0
