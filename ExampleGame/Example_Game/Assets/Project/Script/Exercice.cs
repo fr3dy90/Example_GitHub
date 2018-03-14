@@ -14,7 +14,7 @@ public class Exercice : MonoBehaviour {
     [System.Serializable]
     public class CLass_a
     {
-        public GameObject[] m_material;
+        public Material[] m_material;
     }
     public CLass_a[] class_a;
 
@@ -27,18 +27,20 @@ public class Exercice : MonoBehaviour {
     {
         if(Input.GetButtonDown("Fire1"))
         {
-            //ChangeColor();
-            ChangeColor_V2();
+            ChangeColor();
+            //ChangeColor_V2();
         }
     }
 
     void CrearArray()
     {
+        x = Random.Range(3, 14);
+        y = Random.Range(3, 14);
         class_a = new CLass_a[y];
         for (int i=0; i<y; i++)
         {
             class_a[i] = new CLass_a();
-            class_a[i].m_material = new GameObject[x];
+            class_a[i].m_material = new Material[x];
             for (int j = 0; j < x; j++)
             {
                 int color = Random.Range(0, 4);
@@ -59,53 +61,53 @@ public class Exercice : MonoBehaviour {
                         obj.GetComponent<Renderer>().material.color = Color.green;
                         break;
                 }
-                class_a[i].m_material[j] = obj;
+                class_a[i].m_material[j] = obj.GetComponent<Renderer>().material;
             }
         }
     }
 
-    //void ChangeColor()
-    //{
-    //    for (int i = 0; i < y; i++)
-    //    {
-    //        for (int j = 0; j < x; j++)
-    //        {
-    //           if(j > 0)
-    //            {
-    //                if(class_a[i].m_material[j-1].color == class_a[i].m_material[j].color)
-    //                {
-    //                    class_a[i].m_material[j - 1] = material;
-    //                    class_a[i].m_material[j] = material;
-    //                }
-    //            }
-    //        }
-    //    }
-    //}
-
-    void ChangeColor_V2()
+    void ChangeColor()
     {
-        Color oldColor;
         for (int i = 0; i < y; i++)
         {
-            oldColor = class_a[i].m_material[0].GetComponent<Renderer>().material.color;
             for (int j = 0; j < x; j++)
             {
                 if (j > 0)
                 {
-                    if (class_a[i].m_material[j].GetComponent<Renderer>().material.color == oldColor)
+                    if (class_a[i].m_material[j - 1].color == class_a[i].m_material[j].color)
                     {
-                        oldColor = class_a[i].m_material[j].GetComponent<Renderer>().material.color;
-                        class_a[i].m_material[j - 1].GetComponent<Renderer>().material = material;
-                        class_a[i].m_material[j].GetComponent<Renderer>().material = material;
-                    }
-                    else
-                    {
-                        oldColor = class_a[i].m_material[j].GetComponent<Renderer>().material.color;
+                        class_a[i].m_material[j - 1].color = Color.black ;
+                        class_a[i].m_material[j].color = Color.black;
                     }
                 }
             }
         }
     }
+
+    //void ChangeColor_V2()
+    //{
+    //    Color oldColor;
+    //    for (int i = 0; i < y; i++)
+    //    {
+    //        oldColor = class_a[i].m_material[0].GetComponent<Renderer>().material.color;
+    //        for (int j = 0; j < x; j++)
+    //        {
+    //            if (j > 0)
+    //            {
+    //                if (class_a[i].m_material[j].GetComponent<Renderer>().material.color == oldColor)
+    //                {
+    //                    oldColor = class_a[i].m_material[j].GetComponent<Renderer>().material.color;
+    //                    class_a[i].m_material[j - 1].GetComponent<Renderer>().material = material;
+    //                    class_a[i].m_material[j].GetComponent<Renderer>().material = material;
+    //                }
+    //                else
+    //                {
+    //                    oldColor = class_a[i].m_material[j].GetComponent<Renderer>().material.color;
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
 
     //void ChangeColor_V2()
     //{
