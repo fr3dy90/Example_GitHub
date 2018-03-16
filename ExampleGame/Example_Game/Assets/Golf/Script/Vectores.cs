@@ -13,11 +13,16 @@ public class Vectores : MonoBehaviour {
     public bool hit;
     Rigidbody rb;
 
+    public int res;
+    public Vector2[] points;
+    public float timeSimulate;
+
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         proyectile.transform.position = proyectilePos;
         rb = proyectile.GetComponent<Rigidbody>();
-
+        points = new Vector2[res];
     }
 	
 	// Update is called once per frame
@@ -27,12 +32,35 @@ public class Vectores : MonoBehaviour {
             velocity += gravity*Time.deltaTime;
             proyectilePos += velocity*Time.deltaTime;
             proyectile.transform.position = proyectilePos;
+            timeSimulate -= Time.deltaTime;
+            if (timeSimulate <= 0)
+            {
+                simulate = false;
+            }
         }
         if (hit)
         {
             hit = false;
             rb.useGravity = true;
             rb.AddForce(velocity, ForceMode.Impulse);
+        }
+        Calculate();
+    }
+
+    void Calculate()
+    {
+        Vector2 refVel = velocity;
+        Vector2 refG = gravity;
+        for (int i = 0; i < res; i++)
+        {
+            float t = i / (float)res*timeSimulate;
+            Vector2 desp = refVel * t + refG * t * t / 2f;
+            points[i] = desp;
+            if (i > 0)
+            {
+
+                Debug.DrawLine(points[i], points[i-1], Color.green);
+            }
         }
     }
 }
