@@ -9,6 +9,7 @@ public class Vectores : MonoBehaviour {
     public Vector2 proyectilePos;
     public Vector2 velocity;
     public Vector2 gravity = new Vector2(0, -9.8f);
+    public float t;
 
     public bool hit;
     Rigidbody rb;
@@ -27,6 +28,11 @@ public class Vectores : MonoBehaviour {
             velocity += gravity*Time.deltaTime;
             proyectilePos += velocity*Time.deltaTime;
             proyectile.transform.position = proyectilePos;
+            t -= Time.deltaTime;
+            if (t <= 0)
+            {
+                simulate = false;
+            }
         }
         if (hit)
         {
