@@ -14,29 +14,29 @@ public class OverMouse : MonoBehaviour
     private void Update()
     {
         RaycastHit hit;
-        if(Physics.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector3.forward, out hit))
+        if (Physics.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector3.forward, out hit))
         {
-            if(hit.transform.name != " ")
+            if (hit.transform.name != " ")
             {
                 Light((int)hit.transform.position.x, (int)hit.transform.position.y);
             }
         }
     }
 
-    void Light(int x,  int y)
+    void Light(int x, int y)
     {
         for (int i = 0; i < Grid2D.balls.GetLength(0); i++)
         {
             for (int j = 0; j < Grid2D.balls.GetLength(1); j++)
             {
-                if (Grid2D.balls[i, j].GetComponent<Renderer>().material.color != Color.red 
+                if (Grid2D.balls[i, j].GetComponent<Renderer>().material.color != Color.red
                     && Grid2D.balls[i, j].GetComponent<Renderer>().material.color != Color.blue)
                 {
                     Grid2D.balls[i, j].GetComponent<Renderer>().material.color = Color.white;
                 }
             }
         }
-        if(x >= 0 && x < Grid2D.balls.GetLength(0) && y >= 0 && y < Grid2D.balls.GetLength(1))
+        if (x >= 0 && x < Grid2D.balls.GetLength(0) && y >= 0 && y < Grid2D.balls.GetLength(1))
         {
             if (Grid2D.balls[x, y].GetComponent<Renderer>().material.color != Color.red
                     && Grid2D.balls[x, y].GetComponent<Renderer>().material.color != Color.blue)
@@ -56,72 +56,257 @@ public class OverMouse : MonoBehaviour
         if (isPlayerOne)
         {
             Grid2D.balls[x, y].GetComponent<Renderer>().material.color = Color.red;
-            if (right(x, y, Color.red) >= 4)
+            if( lefth(x, y, Color.red) >= 3)
             {
-                print("jugador 1 gana");
+                print("Gana jugador 1 Izq");
             }
-            else if (lefht(x,y,Color.red) >= 3)
+            else if (right(x, y, Color.red) >= 3)
             {
-                print("Gana Jugador 1");
+                print ("Gana jugador 1 Der");
+            }else if(lefth(x, y, Color.red)+ right(x, y, Color.red) >= 3)
+            {
+                print("Gana jugador 1 Suma");
             }
-            else if(lefht(x, y, Color.red)+ right(x, y, Color.red) >= 3)
+
+            if(dru(x,y,Color.red) >= 3)
             {
-                print("Gana Jugador 1");
+                print("Gana jugaodr 1 DRU");
+            }
+            else if (dld(x, y, Color.red) >= 3)
+            {
+                print("Gana jugador 1 DLD");
+            }
+            else if(dru(x, y, Color.red)+ dld(x, y, Color.red) >= 3)
+            {
+                print("Gana jugador 1 suma ru+ld");
+            }
+
+            if (dlu(x, y, Color.red)>= 3)
+            {
+                print("Gana Jugador 1 dlu");
+            }
+            else if (drd(x, y, Color.red) >= 3)
+            {
+                print("Gana Jugador 1 drd");
+            }
+            else if (dlu(x, y, Color.red)+ drd(x, y, Color.red)>= 3)
+            {
+                print("Gana jugador 1 Suma lu+rd");
+            }
+
+            if (up(x, y, Color.red) >= 3)
+            {
+                print("Gana Jugador 1 up");
+            }
+            else if (down(x, y, Color.red) >= 3)
+            {
+                print("Gana Jugador 1 down");
+            }
+            else if (up(x, y, Color.red) + down(x, y, Color.red) >= 3)
+            {
+                print("Gana jugador 1 Suma vertical");
             }
         }
         else
         {
             Grid2D.balls[x, y].GetComponent<Renderer>().material.color = Color.blue;
-            if (right(x, y, Color.blue) >= 4)
+            if (lefth(x, y, Color.blue) >= 3)
             {
-                print("jugador 2 Gana");
+                print("Gana jugador 2 Izq");
             }
-            else if (lefht(x,y,Color.blue) >= 3)
+            else if (right(x, y, Color.blue) >= 3)
             {
-                print("Gana Jugador 2");
+                print("Gana jugador 2 Der");
             }
-            else if (right(x, y, Color.blue) + lefht(x, y, Color.blue) >= 3)
+            else if (lefth(x, y, Color.blue) + right(x, y, Color.blue) >= 3)
             {
-                print("Gana Jugador 2");
+                print("Gana jugador 2 Suma");
+            }
+
+            if (dru(x, y, Color.blue) >= 3)
+            {
+                print("Gana jugaodr 2 DRU");
+            }
+            else if (dld(x, y, Color.blue) >= 3)
+            {
+                print("Gana jugador 2 DLD");
+            }
+            else if (dru(x, y, Color.blue) + dld(x, y, Color.blue) >= 3)
+            {
+                print("Gana jugador 2 suma ru+ld");
+            }
+
+            if (dlu(x, y, Color.blue) >= 3)
+            {
+                print("Gana Jugador 2 dlu");
+            }
+            else if (drd(x, y, Color.blue) >= 3)
+            {
+                print("Gana Jugador 2 drd");
+            }
+            else if (dlu(x, y, Color.blue) + drd(x, y, Color.blue) >= 3)
+            {
+                print("Gana jugador 2 Suma lu+rd");
+            }
+
+            if (up(x, y, Color.blue) >= 3)
+            {
+                print("Gana Jugador 2 up");
+            }
+            else if (down(x, y, Color.blue) >= 3)
+            {
+                print("Gana Jugador 2 down");
+            }
+            else if (up(x, y, Color.blue) + down(x, y, Color.blue) >= 3)
+            {
+                print("Gana jugador 2 Suma vertical");
             }
         }
     }
 
-    public int right(int x, int y, Color col)
+    public int lefth(int x, int y, Color col)
     {
         int cant = 0;
-        for(int i=x; i<x+3; i++)
+        while( x > 0)
         {
-            if(i < Grid2D.balls.GetLength(0))
+            x--;
+            if(Grid2D.balls[x,y].GetComponent<Renderer>().material.color == col)
             {
-                if(Grid2D.balls[i,y].GetComponent<Renderer>().material.color == col)
-                {
-                    cant++;
-                }
-                else
-                {
-                    cant = 0;
-                }
+                cant++;
+            }
+            else
+            {
+                break;
             }
         }
         return cant;
     }
 
-    public int lefht(int x, int y, Color col)
+    public int right(int x, int y, Color col)
     {
         int cant = 0;
-        for (int i = x-4; i<x; i++)
+        while(x < Grid2D.balls.GetLength(0))
         {
-            if (i >= 0)
+            x++;
+            if(Grid2D.balls[x,y].GetComponent<Renderer>().material.color == col)
             {
-                if(Grid2D.balls[i,y].GetComponent<Renderer>().material.color == col)
-                {
-                    cant++;
-                }
-                else
-                {
-                    cant = 0;
-                }
+                cant++;
+            }
+            else
+            {
+                break;
+            }
+        }
+        return cant;
+    }
+
+    public int dru(int x, int y, Color col)
+    {
+        int cant = 0;
+        while(x<Grid2D.balls.GetLength(0) && y<Grid2D.balls.GetLength(1))
+        {
+            x++;
+            y++;
+            if (Grid2D.balls[x,y].GetComponent<Renderer>().material.color == col)
+            {
+                cant++;
+            }
+            else
+            {
+                break;
+            }
+        }
+        return cant;
+    }
+
+    public int dld(int x, int y, Color col)
+    {
+        int cant = 0;
+        while(x>0 && y> 0)
+        {
+            x--;
+            y--;
+            if (Grid2D.balls[x, y].GetComponent<Renderer>().material.color == col)
+            {
+                cant++;
+            }
+            else
+            {
+                break;
+            }
+        }
+        return cant;
+    }
+
+    public int dlu(int x, int y, Color col)
+    {
+        int cant = 0;
+        while(x>0 && y < Grid2D.balls.GetLength(1))
+        {
+            x--;
+            y++;
+            if (Grid2D.balls[x, y].GetComponent<Renderer>().material.color == col)
+            {
+                cant++;
+            }
+            else
+            {
+                break;
+            }
+        }
+        return cant;
+    }
+
+    public int drd(int x, int y, Color col)
+    {
+        int cant = 0;
+        while (x < Grid2D.balls.GetLength(1) && y > 0 )
+        {
+            x++;
+            y--;
+            if (Grid2D.balls[x, y].GetComponent<Renderer>().material.color == col)
+            {
+                cant++;
+            }
+            else
+            {
+                break;
+            }
+        }
+        return cant;
+    }
+
+    public int up(int x, int y, Color col)
+    {
+        int cant = 0;
+        while(y < Grid2D.balls.GetLength(1))
+        {
+            y++;
+            if (Grid2D.balls[x, y].GetComponent<Renderer>().material.color == col)
+            {
+                cant++;
+            }
+            else
+            {
+                break;
+            }
+        }
+        return cant;
+    }
+
+    public int down(int x, int y, Color col)
+    {
+        int cant = 0;
+        while (y > 0)
+        {
+            y--;
+            if (Grid2D.balls[x, y].GetComponent<Renderer>().material.color == col)
+            {
+                cant++;
+            }
+            else
+            {
+                break;
             }
         }
         return cant;
